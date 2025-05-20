@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.main{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+#moviename{
+    height: 2rem;
+    width: 15rem;
+}
+
+#but{
+    width: 7rem;
+}
+
+#content{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
