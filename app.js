@@ -3,7 +3,7 @@ const but=document.querySelector("#but");
 async function searchMovie(){
     const key="9d7fc2f6";
     const movie=document.getElementById("moviename").value;
-    const url=`http://www.omdbapi.com/?t=${encodeURIComponent(movie)}&apikey=${key}`;
+    const url=`https://www.omdbapi.com/?t=${encodeURIComponent(movie)}&apikey=${key}`;
 
     const res = await fetch(url);
     const data = await res.json();
