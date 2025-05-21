@@ -33,3 +33,8 @@ async function searchMovie(){
 }
 
 but.addEventListener('click',searchMovie);
+document.getElementById("moviename").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        searchMovie();
+    }
+});
