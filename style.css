@@ -4,6 +4,11 @@
 }
 
 body{
+    background-image: url("images/background.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
     padding-top: 2rem;
 }

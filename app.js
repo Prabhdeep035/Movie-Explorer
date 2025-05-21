@@ -10,7 +10,7 @@ async function searchMovie(){
         const res = await fetch(url);
         const data = await res.json();
 
-         const container=document.getElementById("content");
+        const container=document.getElementById("content");
 
         if(data.Response=="True"){
             container.innerHTML=`
