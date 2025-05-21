@@ -52,3 +52,35 @@ h2 {
     color: red;
     font-weight: bold;
 }
+
+@media only screen and  (max-width:501px) {
+    h1{
+        font-size: 2rem;
+    }
+    .main{
+        padding-top: 1.5rem;
+        gap: 1rem;
+    }
+    #moviename{
+        height: 1.5rem;
+        width: 10rem;
+    }
+    #but{
+        width: 4rem;
+    }
+    #content{
+        max-width: 300px;
+    }
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    h2 {
+        margin: 10px 0;
+    }
+
+    .error {
+        color: red;
+        font-weight: bold;
+    }
+}
