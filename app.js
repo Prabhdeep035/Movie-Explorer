@@ -28,7 +28,7 @@ async function searchMovie(){
         console.error("Error Fetching:",error);
     }
     finally{
-        // loader.style.display = "none";
+        loader.style.display = "none";
     }
 }
 

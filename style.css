@@ -34,7 +34,7 @@ h1{
     width: 4rem;
     margin-left: 35%;
     border-radius: 50%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     animation: spin 0.8s linear infinite;
