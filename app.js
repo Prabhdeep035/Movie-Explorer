@@ -1,6 +1,8 @@
 const but=document.querySelector("#but");
 const loader=document.getElementById("loader");
-// http://www.omdbapi.com/?i=tt3896198&apikey=9d7fc2f6
+const theme=document.querySelector("#dark");
+const body=document.body;
+let th="light";
 async function searchMovie(){
     const key="9d7fc2f6";
     const movie=document.getElementById("moviename").value;
@@ -32,9 +34,24 @@ async function searchMovie(){
     }
 }
 
+function changeTheme(){
+    if(th==="light"){
+        body.style.backgroundImage="url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80')";
+        th="dark";
+        theme.innerText="Light Theme";
+    }
+    else{
+        th="light";
+        body.style.backgroundImage="url('images/background.avif')";
+        theme.innerText="Dark Theme";
+
+    }
+}
+
 but.addEventListener('click',searchMovie);
 document.getElementById("moviename").addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         searchMovie();
     }
 });
+theme.addEventListener('click',changeTheme);
