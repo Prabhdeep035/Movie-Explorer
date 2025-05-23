@@ -51,7 +51,7 @@ h1{
 }
 
 #loader{
-    background-color: white;
+    background-color: transparent;
     height: 4rem;
     width: 4rem;
     margin-left: 35%;

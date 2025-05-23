@@ -2,6 +2,9 @@ const but=document.querySelector("#but");
 const loader=document.getElementById("loader");
 const theme=document.querySelector("#dark");
 const body=document.body;
+const inp =document.getElementById('moviename');
+const container=document.getElementById("content");
+
 let th="light";
 async function searchMovie(){
     const key="9d7fc2f6";
@@ -11,8 +14,6 @@ async function searchMovie(){
     try{
         const res = await fetch(url);
         const data = await res.json();
-
-        const container=document.getElementById("content");
 
         if(data.Response=="True"){
             container.innerHTML=`
@@ -39,12 +40,23 @@ function changeTheme(){
         body.style.backgroundImage="url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80')";
         th="dark";
         theme.innerText="Light Theme";
+        inp.style.color='white';
+        inp.style.backgroundColor='black';
+        but.style.color='white';
+        but.style.backgroundColor='black';
+        container.style.color='white';
+        container.style.backgroundColor='black';
     }
     else{
         th="light";
         body.style.backgroundImage="url('images/background.avif')";
         theme.innerText="Dark Theme";
-
+        inp.style.color='black';
+        inp.style.backgroundColor='white';
+        but.style.color='black';
+        but.style.backgroundColor='white';
+        container.style.color='black';
+        container.style.backgroundColor='white';
     }
 }
 
