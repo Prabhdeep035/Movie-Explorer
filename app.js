@@ -4,6 +4,7 @@ const theme=document.querySelector("#dark");
 const body=document.body;
 const inp =document.getElementById('moviename');
 const container=document.getElementById("content");
+const dark=document.getElementById("dark");
 
 let th="light";
 async function searchMovie(){
@@ -46,6 +47,7 @@ function changeTheme(){
         but.style.backgroundColor='black';
         container.style.color='white';
         container.style.backgroundColor='black';
+        dark.style.backgroundColor='purple';
     }
     else{
         th="light";
@@ -57,6 +59,7 @@ function changeTheme(){
         but.style.backgroundColor='white';
         container.style.color='black';
         container.style.backgroundColor='white';
+        dark.style.backgroundColor='grey';
     }
 }
 

@@ -32,6 +32,8 @@ h1{
     border-radius: 50%;
     background-color: gray;
     color: white;
+    border:none;
+
 }
 
 .main{
@@ -131,7 +133,8 @@ h2 {
         width: 3rem;
     }
     #dark{
-        height: 3rem;
+        border-radius: 30%;
+        height: 2rem;
         width: 3rem;
         font-size: 0.8rem;
     }
