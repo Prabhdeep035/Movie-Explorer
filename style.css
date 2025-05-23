@@ -46,10 +46,12 @@ h1{
 #moviename{
     height: 2rem;
     width: 15rem;
+    border: none;
 }
 
 #but{
     width: 7rem;
+    border: none;
 }
 
 #loader{
